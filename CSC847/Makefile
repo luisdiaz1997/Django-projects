@@ -2,7 +2,7 @@ CONDA_ACTIVATE=source $$(conda info --base)/etc/profile.d/conda.sh ; conda activ
 SHELL=/bin/bash
 
 all:
-	@echo "make create: sets up the environment"
+	@echo "make build: sets up the environment"
 	@echo "make run: runs the website"
 
 build:
