@@ -7,5 +7,5 @@ all:
 
 build:
 	@conda env create -f CSC847.yml
-	($(CONDA_ACTIVATE) CSC847; npm install -g @vue/cli @vue/cli-service-global )
+	($(CONDA_ACTIVATE) django; npm install -g @vue/cli @vue/cli-service-global )
 
