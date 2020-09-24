@@ -4,7 +4,7 @@ from . import views
 
 app_name = 'studentapp'
 urlpatterns = [
-    path('', views.IndexView.as_view(), name = 'index'),
-    path('<int:pk>/', views.DetailView.as_view(), name='detail'),
+    path('', views.index, name = 'index'),
+    path('add_to_db/', views.add_to_db, name='add_to_db'),
     path('<int:pk>/results/', views.ResultsView.as_view(), name='results')
     ]
