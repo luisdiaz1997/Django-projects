@@ -34,7 +34,7 @@
       <div class="container">
         <h1 class="display-4">SFSU Student Finder</h1>
         <p class="lead">Find students, or add yourself</p>
-        <form action="/studentapp/" method="POST">
+        <form action="/" method="POST">
           {% csrf_token %}
           <div class="form-row">
             <div class="col-7">
@@ -68,7 +68,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <form action="/studentapp/add_to_db/" method="POST">
+                <form action="/add_to_db/" method="POST">
                   {% csrf_token %}
                   <input id="first_name" name="first_name" type="text" class="form-control" placeholder="First Name">
                   <br>
